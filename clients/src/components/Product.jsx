@@ -11,7 +11,9 @@ const Product = () => {
   const prames = useParams();
   useEffect(() => {
     async function getFun() {
-      let result = await fetch("http://localhost:8000/product/" + prames.id);
+      let result = await fetch(
+        "https://techwing-assignment-server.onrender.com/" + prames.id
+      );
       result = await result.json();
       setName(result.name);
       setBrand(result.brand);

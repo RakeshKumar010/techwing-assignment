@@ -4,10 +4,13 @@ const Home = () => {
   const [productData, setProductData] = useState();
   useEffect(() => {
     async function getFun() {
-      let result = await fetch("http://localhost:8000/", {
-        method: "get",
-        headers: { "content-type": "application/json" },
-      });
+      let result = await fetch(
+        "https://techwing-assignment-server.onrender.com/",
+        {
+          method: "get",
+          headers: { "content-type": "application/json" },
+        }
+      );
       result = await result.json();
       //   console.log(result);
       setProductData(result);
