@@ -52,3 +52,9 @@
 #productDataId{
     width: 100%;
 }
+
+@media screen and (max-width:743px) {
+    .productData{
+        width: 99%;
+    }
+}

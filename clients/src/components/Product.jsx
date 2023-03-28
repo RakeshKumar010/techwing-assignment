@@ -12,7 +12,7 @@ const Product = () => {
   useEffect(() => {
     async function getFun() {
       let result = await fetch(
-        "https://techwing-assignment-server.onrender.com/" + prames.id
+        "https://techwing-assignment-server.onrender.com/product/" + prames.id
       );
       result = await result.json();
       setName(result.name);
